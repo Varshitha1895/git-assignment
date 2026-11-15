@@ -1,0 +1,77 @@
+git init -b main
+Initializes a new Git repository with main as the default branch.
+
+git status
+Displays the state of the working directory and staging area, showing tracked, untracked, and modified files.
+
+git add .
+Stages all modified and new files in the current directory and subdirectories for the next commit.
+
+git commit -m "Initial project setup"
+Creates the initial commit snapshot recording the baseline project files in repository history.
+
+git add index.html
+Stages changes made specifically to the index.html file to prepare for committing.
+
+git commit -m "Updated index page"
+Records a new commit containing the updated content for the home page.
+
+git branch feature
+Creates a new branch named feature pointing to the current commit without switching to it.
+
+git checkout feature
+Switches the working directory to the feature branch to isolate new development.
+
+git add about.html
+Stages the updated about.html file with new feature content on the feature branch.
+
+git commit -m "Added feature updates"
+Commits feature-specific modifications into the feature branch history.
+
+git checkout main
+Switches the active branch back to main in preparation for integration.
+
+git merge feature
+Merges changes from the feature branch into the main branch.
+
+git log --oneline --graph --all
+Visualizes the entire commit history across all branches in a compact, graphical format.
+
+git check-ignore -v sample.log temp/cache.txt
+Debugs and verifies which .gitignore pattern rules apply to specified files.
+
+git add .gitignore
+Stages the .gitignore configuration file so exclusion rules are tracked and versioned.
+
+git commit -m "Add .gitignore to ignore logs and temporary directory"
+Commits the .gitignore rules to prevent untracked temporary files and logs from polluting the repository.
+
+git add README.md
+Stages the newly added project documentation file.
+
+git commit -m "Update README"
+Creates a commit containing the README documentation to demonstrate commit undo capability.
+
+git reset --soft HEAD~1
+Undoes the last commit while preserving all modified files safely in the staging area.
+
+git commit -m "Update README with project description"
+Re-commits the preserved README.md file cleanly with finalized project details.
+
+git remote add origin https://github.com/Varshitha1895/git-assignment.git
+Links the local Git repository to the remote GitHub repository.
+
+git push -u origin main
+Pushes the local main branch to GitHub and sets up upstream tracking.
+
+git push origin feature
+Pushes the feature branch to the remote repository for complete remote parity.
+
+git add git_commands.txt
+Stages the command reference documentation file.
+
+git commit -m "Add git_commands.txt with explanations of all Git commands used"
+Commits the comprehensive Git command reference guide to the repository.
+
+git push origin main
+Pushes the latest commits including documentation updates to the GitHub remote repository.
